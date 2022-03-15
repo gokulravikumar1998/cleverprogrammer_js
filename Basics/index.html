@@ -11,7 +11,7 @@
 <body>
     <h1 id="go"></h1>
     <script>
-        let students = [
+        let students = `[
             {
                 "name": "Gokul",
                 "age": 25,
@@ -22,10 +22,9 @@
                 "age": 30,
                 "height": 168
             }
-        ]
-        console.log(students);
+        ]`
+        console.log(JSON.parse( students));
     </script>
-    <script src="home.js"></script>
 
 </body>
 
