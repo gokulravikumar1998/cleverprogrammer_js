@@ -88,6 +88,7 @@ let morefruit = "banana\napple";
 console.log(morefruit);
 console.log(fruit.indexOf("an")); //1
 console.log(fruit.indexOf("q")); //-1
+console.log(fruit.slice(2,40))
 console.log(fruit.slice(2, 6)); //(including ,upto)
 console.log(fruit.replace("ban", 123));
 console.log(fruit.toUpperCase());
@@ -126,7 +127,7 @@ console.log(fruitss); // remove first element  from array
 fruitss.unshift("dfg");
 console.log(fruitss); //add first element from array
 
-let vege = ["brinj", "potato", "broc"];
+let vege = ["brinj", "potato", "broc",1];
 
 let alls = fruitss.concat(vege); //combine all array
 console.log(alls);
@@ -179,7 +180,6 @@ if ((age>=18)&&(age<=35)){
   stats = 'Target demo'
   console.log(stats)
 } else {
-  stats = 'not my target audience'
   console.log(stats)
 }
 
