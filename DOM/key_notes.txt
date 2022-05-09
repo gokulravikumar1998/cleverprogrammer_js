@@ -1,0 +1,61 @@
+
+
+console.dir(document.getelementbyID('xyz'))
+    --it shows the properties of the element
+
+
+document.body in console browser gives body element
+
+document.body.childern gives the array child nodes of body 
+
+document.body.childern[1] gives forst level child of the body 
+
+document.body.childern[1].children --> going further 
+
+document.body.childNode --> gives the array childNodes of the body (between two tags there comes text )
+
+document.body.childern[1].innerHtml --> gives the html tag 
+
+console.log(document.body.children[i].innerText --> give text within the html tag 
+
+console.log(document.body.firstChild) empty text is the first child
+console.log(document.body.firstChild.WholeText)  gives empty text 
+console.log(document.body.firstElementChild.innerHTML) first element 
+console.log(document.body.lastElementChild.innerHTML)   last element
+
+------------HOW TO GET THE SPECIFIC ELEMET---------------
+    TO SEARCH FOR THE DOM
+document.getelementbyID(id) --fetch from id
+document.querySelectorAll(css)-- fetch from (css)
+document.getelementsByTagName() --  fetch by tag name div 
+document.getelementsByClassName() --fetch from class name
+
+
+-------------MODIFYING THE DOM---video 56----------------
+
+element.append
+element.prepend
+element.innerHTML
+element.innerText
+element.className /get/set class names
+element.classList
+    -add/remove
+    -toggle 
+    -contains
+
+
+let lisele=document.createElemet('li')
+lisele.innerText = "you guessend 8"
+lisele.className = "list-group-item"
+print(lisele) will get <li class="list-group-item">you guessend 8<li>
+document.getelementbyID('list-group')[0].append(lisele)
+
+document.getelementsByClassName('alert')
+document.getelementsByClassName('alert')[0].className //alert alert-warning
+document.getelementsByClassName('alert')[0].className = 'xyz'
+
+document.getelementsByClassName('alert')[0].classList 
+can add/remove classes
+document.getelementsByClassName('alert')[0].classList .add('fancy-class')
+<div class = alert alert-warning fancy-class>
+document.getelementsByClassName('alert')[0].classList.toggle('alert-warning') //remove or  add the class

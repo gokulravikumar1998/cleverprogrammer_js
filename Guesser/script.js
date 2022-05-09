@@ -20,8 +20,20 @@ let correctNumber = getRandomNumber();
 window.onload = function () {
   document.getElementById("number-submit").addEventListener("click", playGame);
   document.getElementById("restart-game").addEventListener("click", initGame);
-  
+  domEvents()
 };
+
+function domEvents(){
+  for (let i =0;i<document.body.children.length;i++){
+    console.log(document.body.children[i].innerHTML)
+    console.log(document.body.children[i].innerText)
+    console.log(document.body.firstChild)
+  }
+  console.log(document.body.firstChild)
+  console.log(document.body.firstChild.WholeText)
+  console.log(document.body.firstElementChild.innerHTML)
+  console.log(document.body.lastElementChild.innerHTML)
+}
 
 /**
  * Functionality for playing the whole game

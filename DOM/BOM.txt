@@ -1,0 +1,11 @@
+BOM contains the DOM 
+window
+    -DOM
+    -history
+    -navigation 
+    -location(windw.location contain info where you current webite is opened in )
+        -windw.location.reload (reload the whole page )
+        -window.location.href = https://www.google.com
+    -window.localStorage
+        -this allows us to (when to login to netflix) lot of user info is stored here
+    -window.scrollY

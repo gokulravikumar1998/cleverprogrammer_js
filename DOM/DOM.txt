@@ -1,0 +1,39 @@
+-Document Object Model
+-structure of any website
+-when browser reads the HTML it reads the kind of tree structure it has 
+    -Document
+        -root element 
+            -body(element)
+                -a(element)
+                    -href (attribute of a)
+                    -'my link (text)
+                -h1(element)
+                    -my header(text)
+            -head(element)
+                -title (element)
+                    -'My websie'
+
+-contains 
+    -elements
+    -propertires
+    -events 
+
+-Allows Javascript(two way communicate) to modify the view 
+    - Javascript can access the href get link of it , text get text of it 
+
+
+-elements
+    -bgcolor
+    -background
+    -onblur
+    -onload
+    -onclick
+
+    each element will have their own propertires/events
+    which Allows Javascript to 
+        -access the view
+        -understand the view 
+        -modify the view 
+
+
+
